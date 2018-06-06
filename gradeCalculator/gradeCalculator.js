@@ -7,9 +7,9 @@
 
 //Grade Group are - A 90-100, B 80-89, C 70-79, D 60-69, F 0-59
 
-let gradeCalculator = function(studentScore, total=100){
+const gradeCalculator = function(studentScore, total=100){
 
-    let percent = (studentScore/total)*100
+    const percent = (studentScore/total)*100
     if (percent>=90){
         return(`You got A ${percent}% `)
     } else if (percent>=80 && percent<90){

@@ -36,7 +36,22 @@ const getThingsToDos = function(todos){
   return filterStatus
 }
 console.log(getThingsToDos(todos))
+//create function sortTodos
+const sortTodos=function(todos){
+  todos.sort(function(a,b){
+    if (a.status < b.status){
+      return -1
+    }else if (b.status < a.status){
+      return 1
+    }else {
+      return 0
+    }
 
+
+  })
+
+
+}
 
 //delete the 3rd item
 //add a new item on to the end

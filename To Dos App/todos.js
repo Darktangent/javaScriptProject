@@ -25,7 +25,17 @@
 deleteTodo(todos,'Drink Water')
 console.log(todos)
 
+// create a function to show the todos thats not completed
 
+const getThingsToDos = function(todos){
+  const filterStatus=todos.filter(function(todo){
+    return todo.status
+  
+
+  })
+  return filterStatus
+}
+console.log(getThingsToDos(todos))
 
 
 //delete the 3rd item

@@ -29,7 +29,7 @@ console.log(todos)
 
 const getThingsToDos = function(todos){
   const filterStatus=todos.filter(function(todo){
-    return todo.status
+    return !todo.status
   
 
   })
